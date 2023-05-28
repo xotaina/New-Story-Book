@@ -1,0 +1,26 @@
+<div class="container">
+        <h1 class="py-2">Edit Story</h1>
+        <form action="/stories/edit/{{story.id}}" method="POST">
+            <input type="hidden" name="_method" value="PUT">
+            {{!-- check for errors --}}
+            {{#if errors}}
+                <div class="alert alert-danger">
+                    {{#each errors}}
+                        <p>{{this.msg}}</p>
+                    {{/each}}
+                </div>
+            {{/if}}
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" value="{{story.title}}" required name="title" id="" aria-describedby="emailHelpId" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="story">Tell us your story</label>
+                <textarea class="form-control" name="content" required id="story" rows="3">{{stripTags story.content}}</textarea>
+            </div> 
+            <div class="row">
+                <input type="submit" value="Edit story" class="btn btn-primary mr-3">
+                <a href="/dashboard" class="btn btn-danger">Cancel</a>
+            </div>
+        </form>
+    </div>

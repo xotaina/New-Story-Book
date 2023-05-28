@@ -1,0 +1,22 @@
+<div class="container">
+        <div class="col-10 offset-col-1 mt-3">
+            <div class="card border-primary shadow shadow-lg border border-rounded mb-3">
+
+                <div class="card-body">
+                    <h4 class="card-title">{{story.title}}</h4>
+                    <p class="card-text text-justified">
+                        {{ stripTags story.content }}
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a class="font-weight-bold text-decoration-none pl-5 text-capitalize"  title="View User stories" href="/stories/user/{{user.id}}">{{user.firstname}} {{user.lastname}}</a>
+
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="font-weight-bold">Date {{format_date story.createdAt }}</p>
+                </div>
+            </div>
+        </div>
+    </div>

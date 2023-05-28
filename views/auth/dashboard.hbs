@@ -1,0 +1,36 @@
+<h4 class="mt-5">Dashboard</h4>
+<h5>Welcome {{user.firstname}}</h5>
+<p class="lead">You are logged in as {{user.email}}</p>
+
+{{#if stories.length}}
+<p class="font-weight-bold">Here are your ({{stories.length}})stories </p>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each stories}}
+                <tr>
+                    <td scope="row">{{sN @index}}</td>
+                    <td><a href="/stories/{{this.id}}">{{this.title}}</a></td>
+                    <td>{{format_date createdAt }}</td>
+                    <td>
+                        <a href="/stories/edit/{{this.id}}" class="float-left btn btn-outline-primary"><i class="fa fa-edit"></i></a>
+                       <form action="/stories/delete/{{this.id}}" method="POST" id="delete-form">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button type="submit" class="btn btn-outline-danger float-left"><i class="fa fa-trash" aria-hidden="true"></i></button>
+
+                       </form>
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+{{else}}
+<p>You have not created any stories</p>
+{{/if}}

@@ -1,0 +1,24 @@
+<div class="container">
+        <h1>Public Stories</h1>
+        {{#each story}}
+        <div class="col-10 offset-col-1">
+            <div class="card border-primary shadow shadow-lg border border-rounded mb-3">
+
+                <div class="card-body">
+                    <h4 class="card-title">{{title}}</h4>
+                    <p class="card-text text-justified">{{stripTags (truncate content 200)}}</p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a class="pl-4" href="/stories/user/{{user_id}}">See User Stories</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="/stories/{{id}}" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    {{else}}
+        <p class="lead">No stories To Display</p>
+    {{/each}}
+</div>

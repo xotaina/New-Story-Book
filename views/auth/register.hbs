@@ -1,0 +1,45 @@
+<div class="container">
+            <div class="card shadow shadow-lg mt-4">
+                {{!-- check for errors --}}
+                {{#if errors}}
+                    <div class="alert alert-danger">
+                        {{#each errors}}
+                            <p>{{this.msg}}</p>
+                        {{/each}}
+                    </div>
+                {{/if}}
+                
+                <div class="card-body text-center">
+                    <!-- Registration Form -->
+                    <form action="/register" method="post">
+                        <div class="mb-3">
+                            <label for="email" class="form-label float-">Email address</label>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="firstname" class="form-label">First Name</label>
+                            <input type="text" name="firstname" class="form-control" id="firstname" placeholder="John">
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastname" class="form-label">Last Name</label>
+                            <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Doe">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" name="password" class="form-control" id="password" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" name="password2" class="form-control" id="password" >
+                        </div>
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary">Register</button>
+                        <!-- login -->
+                        <p class="lead mt-3">Already have an account? <a href="/">Login</a></p>
+                    </form>
+
+                    
+
+                </div>
+            </div>
+        </div>
