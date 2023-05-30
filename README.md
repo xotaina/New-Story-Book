@@ -26,5 +26,5 @@ Whether it be through a poem song lyric or even just a heartwarming personal sto
 
 # Screenshot
 
-"C:\Users\tanis\project-2\login jpeg.jpg"
+![login jpeg](https://github.com/xotaina/New-Story-Book/assets/123917857/9eb0a392-c56e-49d1-a52e-d327caed3c4c)
 
