@@ -28,3 +28,9 @@ Whether it be through a poem song lyric or even just a heartwarming personal sto
 
 ![login jpeg](https://github.com/xotaina/New-Story-Book/assets/123917857/9eb0a392-c56e-49d1-a52e-d327caed3c4c)
 
+![dashboard jpeg](https://github.com/xotaina/New-Story-Book/assets/123917857/360a508d-b931-422f-b3d8-d23af86326eb)
+
+![add new story jpeg](https://github.com/xotaina/New-Story-Book/assets/123917857/92c7c0e1-6dbf-4625-9afc-f1d5cb773a17)
+
+![public stories jpeg](https://github.com/xotaina/New-Story-Book/assets/123917857/4c3515bb-0fd9-4d73-ad83-bc0b1cdd0760)
+
