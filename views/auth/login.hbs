@@ -66,5 +66,46 @@
     font-family: 'Roboto', sans-serif;
   }
 
+<div class="container">
 
+
+    <div class="card shadow shadow-lg mt-4">
+        {{!-- check for errors --}}
+        {{#if errors}}
+            <div class="alert alert-danger">
+                {{#each errors}}
+                    <p>{{this.msg}}</p>
+                {{/each}}
+            </div>
+        {{/if}}
+        {{!-- success message --}}
+        {{#if success}}
+            <div class="alert alert-success">
+                <p>{{success}}</p>
+            </div>
+        {{/if}}
+        <div class="card-body text-center">
+            <!-- Registration Form -->
+            <form action="/login" method="post">
+                <div class="mb-3">
+                    <label for="email" class="form-label float-">Email address</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="John">
+                </div>
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary">Login</button>
+                <!-- Register -->
+                <p class="lead mt-3">Don't have an account? <a href="/register">Register</a></p>
+            </form>
+
+
+           
+
+
+        </div>
+    </div>
+</div>
 
