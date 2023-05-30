@@ -1,3 +1,20 @@
+# Project Name-Story-Book
+
+# Project URL - https://story-book.herokuapp.com/
+
+
+# Heroku
+
+https://story-book.herokuapp.com/
+
+# GitHub
+
+https://github.com/xotaina/New-Story-Book
+
+# Project repository 
+
+https://github.com/xotaina/New-Story-Book
+
 # Project Description
 
 StoryBook is an online platform where people can share stories and experiences.
